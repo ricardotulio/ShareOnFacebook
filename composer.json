@@ -1,0 +1,15 @@
+{
+    "name": "shareon/facebook",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ricardo Ledo de Tulio",
+            "email": "ledo.tulio@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpunit/phpunit": "4.8"
+    }
+}
