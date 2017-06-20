@@ -13,11 +13,22 @@ class ShareOn_Facebook_ModuleTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function mustHaveBeenInstalled()
+    public function mustBeInstalled()
     {
         $modules = (array) Mage::getConfig()
             ->getNode('modules')
             ->children();
+        
         $this->assertTrue(isset($modules[self::MODULE_NAME]));
+    }
+
+    /**
+     * @test
+     */
+    public function mustBeActive()
+    {
+        $this->assertTrue(
+            Mage::helper('core')->isModuleEnabled(self::MODULE_NAME)
+        );
     }
 }

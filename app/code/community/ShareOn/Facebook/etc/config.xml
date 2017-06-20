@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <ShareOn_Facebook>
+            <version>0.1.0</version>
+        </ShareOn_Facebook>
+    </modules>
+    <global>
+        <models>
+            <shareon_facebook>
+                <class>ShareOn_Facebook_Model</class>
+            </shareon_facebook>
+        </models>
+        <helpers>
+            <shareon_facebook>
+                <class>ShareOn_Facebook_Helper</class>
+            </shareon_facebook>
+        </helpers>
+        <blocks>
+            <shareon_facebook>
+                <class>ShareOn_Facebook_Block</class>
+            </shareon_facebook>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <shareon_facebook>
+                    <file>shareon/facebook.xml</file>
+                </shareon_facebook>
+            </updates>
+        </layout>
+    </frontend>
+</config>
