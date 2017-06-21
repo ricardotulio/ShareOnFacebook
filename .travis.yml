@@ -1,3 +1,4 @@
+language: php
 sudo: required
 
 services:
@@ -22,3 +23,7 @@ before_install:
 
 script:
     - script/test.sh
+
+after_success:
+    - php composer.phar install satooshi/php-coveralls
+    - travis_retry php vendor/bin/coveralls

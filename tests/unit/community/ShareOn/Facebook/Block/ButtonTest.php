@@ -17,9 +17,6 @@ class ShareOn_Facebook_Block_ButtonTest extends PHPUnit_Framework_TestCase
         Mage::register('product', $this->product);
     }
 
-    /**
-     * @test
-     */
     public function mustDisplayButton()
     {
         $layout = Mage::app()->getLayout();
