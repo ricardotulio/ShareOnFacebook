@@ -22,7 +22,7 @@ before_install:
   - echo "MAGENTO_VERSION=$MAGENTO_VERSION" >> .env
 
 script:
-    - script/test.sh
+    - scripts/test.sh
 
 after_success:
     - php composer.phar install satooshi/php-coveralls
