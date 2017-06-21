@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker-compose exec -T magento vendor/bin/phpunit
+docker-compose exec -T magento vendor/bin/phpunit --bootstrap tests/bootstrap.php tests/
