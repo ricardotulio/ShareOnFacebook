@@ -33,7 +33,7 @@ done
 docker-compose exec magento /opt/docker/bin/composer install
 docker-compose exec magento php index.php
 
-for testScript in $(ls ./script/test-*.sh); do
+for testScript in $(ls ./scripts/test-*.sh); do
     /bin/bash $testScript
 
     stepExitCode=$?
