@@ -30,7 +30,7 @@ do
   sleep 15
 done
 
-docker-compose exec magento /opt/docker/bin/composer install
+composer install
 docker-compose exec magento php index.php
 
 for testScript in $(ls ./scripts/test-*.sh); do
