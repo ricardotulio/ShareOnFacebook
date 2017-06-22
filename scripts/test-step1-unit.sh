@@ -1,3 +1,6 @@
 #!/bin/bash
 
-docker-compose exec -T magento vendor/bin/phpunit --bootstrap tests/bootstrap.php tests/
+echo $(pwd)
+docker-compose exec -T magento vendor/bin/phpunit
+docker-compose exec magento cp -a build /opt/docker/magento/module/
+sudo chown -R $(whoami):$(whoami) build
