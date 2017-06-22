@@ -1,4 +1,2 @@
-coverage_clover: build/logs/clover.xml
-json_path: build/logs/coverage-update.json
-repo_token: NuOY190PZrX3qZ6qRMfQQE7jMPEBqc1lf
 service_name: travis-ci
+coverage_clover: build/logs/clover.xml
